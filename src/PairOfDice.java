@@ -6,6 +6,7 @@ public class PairOfDice {
 	public static void main(String[] args) {
 		Scanner scnr = new Scanner(System.in);
 		System.out.println("Welcome to the Grand Circus Casino!");
+		System.out.println();
 
 		String rollAnswer = "y";
 
@@ -14,13 +15,16 @@ public class PairOfDice {
 			System.out.println("How many sides should each die have?");
 			int sideAnswer = scnr.nextInt();
 
+			System.out.println();
 			System.out.println("Roll 1:");
 			System.out.println(generateRandomDieRoll(sideAnswer));
 			System.out.println(generateRandomDieRoll(sideAnswer));
 
+			System.out.println();
 			System.out.println("Roll again? (y/n):...");
 			rollAnswer = scnr.next();
 		}
+		System.out.println();
 		System.out.println("Error....");
 		scnr.close();
 	}
