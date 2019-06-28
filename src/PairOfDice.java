@@ -14,6 +14,7 @@ public class PairOfDice {
 			System.out.println("How many sides should each die have?");
 			int sideAnswer = scnr.nextInt();
 
+			System.out.println("Roll 1:");
 			System.out.println(generateRandomDieRoll(sideAnswer));
 			System.out.println(generateRandomDieRoll(sideAnswer));
 
