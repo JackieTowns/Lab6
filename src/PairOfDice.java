@@ -15,6 +15,7 @@ public class PairOfDice {
 			int sideAnswer = scnr.nextInt();
 
 			System.out.println(generateRandomDieRoll(sideAnswer));
+			System.out.println(generateRandomDieRoll(sideAnswer));
 
 			System.out.println("Roll again? (y/n):...");
 			rollAnswer = scnr.next();
@@ -24,18 +25,18 @@ public class PairOfDice {
 	}
 
 	public static int generateRandomDieRoll(int dieRoll) {
-
-		Random diceRolled = new Random();
-		int roll = diceRolled.nextInt(dieRoll);
-		return roll;
+			Random diceRolled1 = new Random();
+		int roll1 = diceRolled1.nextInt(dieRoll) + 1;
+			return roll1;
+		}
 		
-		/*
-		 * for (int i = 0; i < dieRoll; i++) { System.out.println((int) Math.random() +
-		 * 1);
-		 * 
-		 * }
-		 */
+	/*
+	 * for (int i = 0; i < dieRoll; i++) { System.out.println((int)
+	 * Math.random(dieRoll) + 1);
+	 * 
+	 * }
+	 */
 
 	}
 
-}
+
